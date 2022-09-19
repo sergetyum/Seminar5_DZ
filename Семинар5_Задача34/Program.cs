@@ -36,28 +36,28 @@ void FillArray(int[] array)
 // 4. С помощью метода PrintArray формируем формат массива для вывода в терминал.
 void PrintArray(int[] array)
 {
-Console.Write("[");
-for (int i = 0; i < array.Length-1; i++)
-{
-Console.Write($"{array[i]}, ");
-}
-Console.Write($"{array[array.Length-1]}");
-Console.Write("]");
+  Console.Write("[");
+  for (int i = 0; i < array.Length-1; i++)
+  {
+    Console.Write($"{array[i]}, ");
+  }
+  Console.Write($"{array[array.Length-1]}");
+  Console.Write("]");
 }
 
-// 5. Определяем количество четных чисел в сформированном массиве.
-int count=0;
+// 5. Вызываем метод FillArray для дальнейшей работы с массивом array;
+FillArray (array);
+
+// 6. Определяем количество четных чисел в сформированном массиве.
+int numberOfEvenNumbers=0;
 for (int i = 0; i < array.Length; i++)
 {
-if ((array[i] % 2) == 0)
-count++;
+   if ((array[i] % 2) == 0)
+   numberOfEvenNumbers++;
 }
 
-// 6. Вызываем методы, которые применяли для инициализации 
-// и формирования формата распечатки массива array.
-FillArray (array);
+// 7. Вызываем метод PrintArray для распечатки массива array;
 PrintArray (array);
 
-
-// 7. Выводим массив и количество в нем четных чисел в терминал.
-Console.Write($" -> количество четных чисел: {count}");
+// 8. Выводим массив и количество в нем четных чисел в терминал.
+Console.Write($" -> количество четных чисел: {numberOfEvenNumbers}");

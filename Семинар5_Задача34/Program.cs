@@ -28,7 +28,7 @@ void FillArray(int[] array)
   //int i = 0;
   //while (i < length)
   //{
-    //array[i] = new Random(). Next(100, 999);
+    //array[i] = new Random(). Next(100,1000);
     //i++;
   //}
 //}

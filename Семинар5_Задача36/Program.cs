@@ -21,7 +21,7 @@ void FillArray(int[] array)
    Random rand = new Random();
    for(int i =0; i<array.Length; i++)
    {
-      array[i] = rand.Next(min,max); //Заполняем массив случайными числами.
+      array[i] = rand.Next(min,max+1); //Заполняем массив случайными числами.
    }
 }
 
